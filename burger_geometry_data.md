@@ -1,12 +1,12 @@
-# 📊 Matrix Data Node: burger_geometry.npy
+#  Matrix Data Node: burger_geometry.npy
 
 **Data Array Shape:** `(14, 2)`\
 **Data Primitive Type:** `float64`
 
-## 🔗 Component Entry Mapping Links
+##  Component Entry Mapping Links
 [[geometry]], [[array_tracking]], [[diffraction]], [[utils]], [[fsr_pair]], [[link_budget]], [[main]], [[config]], [[array_optimizer]], [[__init__]], [[plots]]
 
-## 📝 Matrix Preview Layout
+##  Matrix Preview Layout
 ```text
 [[ 0.17534005 -0.27      ]
  [ 0.37374005 -0.58      ]

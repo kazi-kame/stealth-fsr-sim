@@ -16,7 +16,7 @@ This repository contains a modular Python package (`burger_sim`) that simulates 
 The simulation automatically generates diagnostic plots for each module in the `burger_sim/outputs/` directory:
 
 ### Module 1: Burger Geometry
-![Module 1: Burger Geometry](burger_sim/outputs/module1_geometry.png)
+![Module 1: Burger Geometry](outputs/module1_geometry.png)
 *Aircraft planform definition, triangulation, and optional depth phase screen*
 
 The normalized Burger (B‑2‑derived) planform polygon (14 vertices) overlaid with its Delaunay triangulation (12 triangles). The polygon is colored to indicate interior vs. exterior, and the centroid of each triangle is marked.
@@ -24,13 +24,13 @@ The normalized Burger (B‑2‑derived) planform polygon (14 vertices) overlai
 ---
 
 ### Module 2: Diffraction Analysis
-![Module 2: Diffraction Patterns](burger_sim/outputs/module2_diffraction.png)
+![Module 2: Diffraction Patterns](outputs/module2_diffraction.png)
 *Radar Cross Section (RCS) diffraction patterns*
 
 The magnitude of the far‑field (Fraunhofer) diffraction pattern |U(kₓ,k_y)| computed from the aperture field via a zero‑padded 2‑D FFT. The central lobe (specular/forward‑scatter direction) is highlighted, and side‑lobe structure is visible.
 
 
-![Module 2: Frequency Sweep](burger_sim/outputs/module2_frequency_sweep.png)
+![Module 2: Frequency Sweep](outputs/module2_frequency_sweep.png)
 *Frequency sweep showing RCS vs frequency with optimal operating point identified*
 
 Forward‑scatter RCS (σ_fs, in m²) versus frequency (50 MHz – 12 GHz) for the Burger planform, together with the estimated main‑lobe beamwidth (in degrees) at each frequency.
@@ -51,13 +51,13 @@ Forward‑scatter RCS (σ_fs, in m²) versus frequency (50 MHz – 12 
 ---
 
 ### Module 3: Single FSR Pair
-![Module 3: Time-Domain Signal](burger_sim/outputs/module3_signal.png)
+![Module 3: Time-Domain Signal](outputs/module3_signal.png)
 *Simulated FSR signal showing meteor trail/aircraft scattering signature*
 
 The base‑band received voltage signal (arbitrary units) versus time for a single transmitter‑receiver pair as the Burger target flies along a predefined trajectory. The signal exhibits a series of positive‑and‑negative pulses corresponding to each crossing of the specular point
 
 
-![Module 3: Signal-to-Noise Ratio](burger_sim/outputs/module3_snr.png)
+![Module 3: Signal-to-Noise Ratio](outputs/module3_snr.png)
 *SNR over time demonstrating >50 dB detection capability*
 
 Instantaneous SNR (in dB) computed from the signal power divided by the estimated noise floor, plotted versus time along the same trajectory as the signal plot.
@@ -73,17 +73,17 @@ Instantaneous SNR (in dB) computed from the signal power divided by the estimate
 ---
 
 ### Module 4: Array Tracking
-![Module 4: Array Geometry](burger_sim/outputs/module4_array_map.png)
+![Module 4: Array Geometry](outputs/module4_array_map.png)
 *4-element antenna array layout and geometry*
 
 The positions of the four antenna elements (two transmitters, two receivers) that form the bistatic pairs used in the simulation, overlaid with the Burger trajectory and the baseline lines (TX‑RX vectors) for each pair
 
-![Module 4: Tracking Results](burger_sim/outputs/module4_track.png)
+![Module 4: Tracking Results](outputs/module4_track.png)
 *3D trajectory reconstruction from TDOA measurements*
 
 The reconstructed 3‑D trajectory (estimated position versus time) overlaid with the ground‑truth Burger path. The estimated path follows the true trajectory closely, with small deviations visible mainly at the start/end of the pass where fewer baselines contribute
 
-![Module 4: Error Analysis](burger_sim/outputs/module4_errors.png)
+![Module 4: Error Analysis](outputs/module4_errors.png)
 *Monte Carlo error analysis showing heading (0.003° RMS) and position (0.32m RMS) precision*
 
 Monte‑Carlo distribution of position and heading errors (10 000 runs) obtained by adding zero‑mean Gaussian timing jitter ($$\sigma = 10ms $$) to each TDOA measurement. The histograms are fitted with Gaussians yielding RMS values: heading ≈ 0.003°, position ≈ 0.32 m, speed ≈ 0.015 m/s.

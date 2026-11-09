@@ -1,6 +1,5 @@
 # Stealth FSR Simulation (Burger)
-
-A physics-based simulation of Forward Scatter Radar (FSR) for meteor detection and atmospheric studies, adapted for aircraft detection applications. This simulation demonstrates the detection and tracking of stealth aircraft using forward scatter radar techniques.
+A simulation of Forward Scatter Radar (FSR) for meteor detection and atmospheric studies, adapted for aircraft detection applications. This simulation demonstrates the detection and tracking of stealth aircraft using forward scatter radar techniques.
 
 ## Overview
 
